@@ -62,7 +62,7 @@ namespace literal {
     template<char ... chars>
     class string {
     public:
-        string(string_sequence<chars...>) {} // NOLINT(google-explicit-constructor)
+        constexpr string(string_sequence<chars...>) {} // NOLINT(google-explicit-constructor)
 
         constexpr auto length() {
             return sizeof...(chars);

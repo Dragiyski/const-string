@@ -30,3 +30,10 @@
 *.exe
 *.out
 *.app
+
+# This is header-only template library,
+# it does not require any build
+CMakeLists.txt
+main.cpp
+.idea/
+build/
